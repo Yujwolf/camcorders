@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+  header {
+    /* Изменяем направление оси в шапке на вертикальное */
+    flex-direction: column;
+
+    /* Выравниваем элементы в «шапке» влево */
+    align-items: flex-start;
+  }
+}
+
+.parent-header {
+  max-width: 1388px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.logo {
+  width: 140px;
+}
+
+li {
+  width: 80px;
+  text-align: center;
+}
+
+.phone {
+  font-size: 23px;
+  color: #2361c5;
+  font-weight: bold;
+  background-color: white;
+}
+
+.header-right {
+  margin-bottom: 12px;
+}
+.header-right img {
+  width: 40px;
+}
+.swiper {
+  width: 1126px;
+  height: 492px;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.parent-section {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.parent-minsection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text {
+  position: relative;
+  pointer-events: none;
+}
+
+.text1 {
+  margin: 0;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+.swiper2 {
+  width: 1126px;
+  height: 492px;
+}
+
+.parent-banner-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.banner-footer {
+  margin: 0 auto;
+}
+
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.floating-button:hover {
+  background: #2ee59d;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
